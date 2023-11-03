@@ -7,7 +7,7 @@ export default async function page({params}) {
     const response = await fetch(`http://localhost:3000/dados/eletronicos/${id}`);
     const items = await response.json();
 
-
+// teste
     return (
         <div>
             <ul>
