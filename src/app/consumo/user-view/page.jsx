@@ -29,8 +29,6 @@ export default async function UserView() {
                     <th>Nome</th>
                     <th>Email</th>
                     <th>Telefone</th>
-                    <th>Região</th>
-                    <th>Data de Nascimento</th>
                 </tr>
             </thead>
             <tbody>
@@ -41,8 +39,6 @@ export default async function UserView() {
                                     <td><Link href={`/consumo/user-view/${user.id}`}>{user.nome}</Link></td>
                                     <td>{user.email}</td>
                                     <td>{user.telefone}</td>
-                                    <td>{user.regiao}</td>
-                                    <td>{user.nascimento}</td>
                                 </tr>
                         ))
                     }
