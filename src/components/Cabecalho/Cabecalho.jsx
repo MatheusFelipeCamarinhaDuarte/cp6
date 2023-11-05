@@ -9,6 +9,7 @@ export default function Cabecalho() {
                 <Link className="link-cabecalho" href="/produtos/produto/estaticas/tenis">TÊNIS</Link>
                 <Link className="link-cabecalho" href="/produtos/produto/dinamicas/estranho/tenis-preto">TÊNIS PRETO</Link>
                 <Link className="link-cabecalho" href="/produtos/produto/dinamicas/vestuario/camisa-xadrez">CAMISA-X</Link>
+                <Link className="link-cabecalho" href="/consumo/user-view">Usuários</Link>
             </nav>
         </header>
     )
