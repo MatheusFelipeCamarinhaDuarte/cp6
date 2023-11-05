@@ -9,8 +9,7 @@ export default async function page({params}) {
 
     return (
         <div>
-            <ul>
-                <li key={items.id}>
+                <div key={items.id}>
                     <h2>{items.nome}</h2>
                     <figure>
                         <Image
@@ -21,8 +20,7 @@ export default async function page({params}) {
                             /> 
                         <figcaption>{items.descricao} - R$ <span>{items.preco}</span></figcaption>
                     </figure>  
-                </li>
-                </ul>
+                </div>
         </div>
     )
 }
