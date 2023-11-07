@@ -12,15 +12,17 @@ export default async function page({params}) {
     // 
 
     return (
-        <div>
-                <ul key={user.id} >
-                    <li>Nome: {user.nome} |</li>
-                    <li>Email: {user.email} |</li>
-                    <li>Telefone: {user.telefone} |</li>
-                    <li>Região: {user.regiao} |</li>
-                    <li>Data de nascimento: {user.nascimento} |</li>
-                    <li>idade: {idade} </li>
-                </ul>
+        <div class="flex justify-center">
+            <div className='tela-usuario'>
+                    <ul key={user.id} className="list-none flex flex-col">
+                        <li class="mb-2 block">Nome: <span class="font-semibold">{user.nome}</span></li>
+                        <li class="mb-2 block">Email: <span class="font-semibold">{user.email}</span></li>
+                        <li class="mb-2 block">Telefone: <span class="font-semibold">{user.telefone}</span></li>
+                        <li class="mb-2 block">Região: <span class="font-semibold">{user.regiao}</span></li>
+                        <li class="mb-2 block">Data de Nascimento: <span class="font-semibold">{user.nascimento}</span></li>
+                        <li class="mb-2 block">Idade: <span class="font-semibold">{idade}</span></li>
+                    </ul>
+            </div>
         </div>
     )
 }

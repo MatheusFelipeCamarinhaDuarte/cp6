@@ -22,20 +22,20 @@ export default async function UserView() {
   return (
 
     <div>
-        <table border="1">
+        <table className='tabela'>
             <thead>
                 <tr>
-                    <th>#</th>
-                    <th>Nome</th>
-                    <th>Email</th>
-                    <th>Telefone</th>
+                    <th className='tabela-titulo' class='text-center'>#</th>
+                    <th className='tabela-titulo'>Nome</th>
+                    <th className='tabela-titulo'>Email</th>
+                    <th className='tabela-titulo'>Telefone</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody className='tabela-corpo'>
                     {
                         users.map((user)=>(
-                                <tr key={users.id}>
-                                    <td>{user.id}</td>
+                                <tr key={users.id}className='hover:font-semibold'>
+                                    <td className='text-center'>{user.id}</td>
                                     <td><Link href={`/consumo/user-view/${user.id}`}>{user.nome}</Link></td>
                                     <td>{user.email}</td>
                                     <td>{user.telefone}</td>

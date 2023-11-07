@@ -17,4 +17,21 @@
     & ul{
         @apply flex flex-row flex-wrap justify-center;
     }
+
+    .tabela{
+        @apply min-w-full divide-y divide-gray-200;
+    }
+    .tabela-titulo{
+        @apply px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider
+    }
+    .tabela-corpo{
+        @apply bg-white divide-y divide-gray-200
+    }
+    .tela-usuario{
+        @apply bg-white border rounded p-4 m-4 inline-block 
+    }
+    .card-usuario{
+        @apply mb-2 font-semibold 
+    }
+
 };
