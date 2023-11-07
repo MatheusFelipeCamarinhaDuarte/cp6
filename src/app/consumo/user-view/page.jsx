@@ -4,7 +4,6 @@ import React from 'react'
 export default async function UserView() {
   
       // DEve ter o método de alterar os dados de um usuários e um para excluir os dados do mesmo
-  
       // os nomes devem conter links que irão levar o usuário para mais informações daquele usuário
     
     let users;
